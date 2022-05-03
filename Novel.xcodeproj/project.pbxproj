@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265D2956281FE2E000D0058A /* FirstSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D2955281FE2E000D0058A /* FirstSelectViewController.swift */; };
+		265D2958281FF28F00D0058A /* SecondSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D2957281FF28F00D0058A /* SecondSelectViewController.swift */; };
+		265D295D281FF2FE00D0058A /* DialogOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265D295C281FF2FE00D0058A /* DialogOne.swift */; };
+		26626AA528210DC500AE90EB /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26626AA428210DC500AE90EB /* EndGameViewController.swift */; };
 		268D4110281E9F1700C2CB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D410F281E9F1700C2CB26 /* AppDelegate.swift */; };
 		268D4112281E9F1700C2CB26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D4111281E9F1700C2CB26 /* SceneDelegate.swift */; };
 		268D4114281E9F1700C2CB26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D4113281E9F1700C2CB26 /* ViewController.swift */; };
@@ -15,6 +19,7 @@
 		268D411C281E9F1800C2CB26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268D411A281E9F1800C2CB26 /* LaunchScreen.storyboard */; };
 		268D4127281E9F1800C2CB26 /* NovelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D4126281E9F1800C2CB26 /* NovelTests.swift */; };
 		268D4132281E9F1800C2CB26 /* NovelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D4131281E9F1800C2CB26 /* NovelUITests.swift */; };
+		268D414D281EB3D100C2CB26 /* AddNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D414C281EB3D100C2CB26 /* AddNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		265D2955281FE2E000D0058A /* FirstSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSelectViewController.swift; sourceTree = "<group>"; };
+		265D2957281FF28F00D0058A /* SecondSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSelectViewController.swift; sourceTree = "<group>"; };
+		265D295C281FF2FE00D0058A /* DialogOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogOne.swift; sourceTree = "<group>"; };
+		26626AA428210DC500AE90EB /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		268D410C281E9F1700C2CB26 /* Novel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268D410F281E9F1700C2CB26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268D4111281E9F1700C2CB26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		268D412D281E9F1800C2CB26 /* NovelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268D4131281E9F1800C2CB26 /* NovelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelUITests.swift; sourceTree = "<group>"; };
 		268D4133281E9F1800C2CB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268D414C281EB3D100C2CB26 /* AddNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265D2959281FF2D400D0058A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				265D295C281FF2FE00D0058A /* DialogOne.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		268D4103281E9F1700C2CB26 = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +117,10 @@
 		268D410E281E9F1700C2CB26 /* Novel */ = {
 			isa = PBXGroup;
 			children = (
-				268D410F281E9F1700C2CB26 /* AppDelegate.swift */,
-				268D4111281E9F1700C2CB26 /* SceneDelegate.swift */,
-				268D4113281E9F1700C2CB26 /* ViewController.swift */,
-				268D4115281E9F1700C2CB26 /* Main.storyboard */,
-				268D4118281E9F1800C2CB26 /* Assets.xcassets */,
-				268D411A281E9F1800C2CB26 /* LaunchScreen.storyboard */,
+				265D2959281FF2D400D0058A /* Models */,
+				268D413F281E9F2300C2CB26 /* Application */,
+				268D4140281E9F3600C2CB26 /* Resources */,
+				268D4141281E9F5800C2CB26 /* Main */,
 				268D411D281E9F1800C2CB26 /* Info.plist */,
 			);
 			path = Novel;
@@ -126,6 +142,37 @@
 				268D4133281E9F1800C2CB26 /* Info.plist */,
 			);
 			path = NovelUITests;
+			sourceTree = "<group>";
+		};
+		268D413F281E9F2300C2CB26 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				268D410F281E9F1700C2CB26 /* AppDelegate.swift */,
+				268D4111281E9F1700C2CB26 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		268D4140281E9F3600C2CB26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				268D4118281E9F1800C2CB26 /* Assets.xcassets */,
+				268D411A281E9F1800C2CB26 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		268D4141281E9F5800C2CB26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				268D4113281E9F1700C2CB26 /* ViewController.swift */,
+				268D4115281E9F1700C2CB26 /* Main.storyboard */,
+				268D414C281EB3D100C2CB26 /* AddNameViewController.swift */,
+				265D2955281FE2E000D0058A /* FirstSelectViewController.swift */,
+				265D2957281FF28F00D0058A /* SecondSelectViewController.swift */,
+				26626AA428210DC500AE90EB /* EndGameViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265D2958281FF28F00D0058A /* SecondSelectViewController.swift in Sources */,
 				268D4114281E9F1700C2CB26 /* ViewController.swift in Sources */,
 				268D4110281E9F1700C2CB26 /* AppDelegate.swift in Sources */,
+				265D2956281FE2E000D0058A /* FirstSelectViewController.swift in Sources */,
 				268D4112281E9F1700C2CB26 /* SceneDelegate.swift in Sources */,
+				265D295D281FF2FE00D0058A /* DialogOne.swift in Sources */,
+				26626AA528210DC500AE90EB /* EndGameViewController.swift in Sources */,
+				268D414D281EB3D100C2CB26 /* AddNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
